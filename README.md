@@ -5,4 +5,4 @@
 
 # Welcome to EKS
 
-<img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="100">
+<img src="![image](https://user-images.githubusercontent.com/62458394/167290603-fd620bb2-91ee-4c65-89f2-256dcc9f0216.png)" width="100">
