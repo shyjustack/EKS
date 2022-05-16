@@ -47,10 +47,10 @@ eksctl utils associate-iam-oidc-provider \
 
 
 ## Step-03: Create EC2 Keypair
-- Create a new EC2 Keypair with name as `kube-demo`
-- This keypair we will use it when creating the EKS NodeGroup. --> Follow this steps 
-- <img width="344" alt="image" src="https://user-images.githubusercontent.com/62458394/168554051-a63c5085-8345-4729-abbe-bb65b813c6be.png">
+- Create a new EC2 Keypair with name as `kube-demo` - go to GUI and create Keypair follow the below screen shot 
+<img width="344" alt="image" src="https://user-images.githubusercontent.com/62458394/168554333-8960b0ee-f2d6-4cc2-b558-f11f115a25c5.png">
 
+- This keypair we will use it when creating the EKS NodeGroup. 
 - This will help us to login to the EKS Worker Nodes using Terminal.
 
 ## Step-04: Create Node Group with additional Add-Ons in Public Subnets
