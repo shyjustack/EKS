@@ -1,6 +1,9 @@
 # AWS EKS Storage
 # How to persist the date in Kubernetes using volume?
-| persistant volume | persistance volume calim | Stoarge Class |
+-	 persistent volume  
+-	persistence volume claim 
+-	Storage Class 
+
 
 ## AWS EBS CSI Driver
 - We are going to use EBS CSI Driver and use EBS Volumes for persistence storage to MySQL Database
