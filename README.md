@@ -9,7 +9,7 @@
 
 ## Topics 
 
-* [Install EKS CLI)](https://github.com/shyju102/EKS/tree/main/01-EKS-Cluster-Creation/Install%20CLI#readme)
+* [Install EKS CLI](https://github.com/shyju102/EKS/tree/main/01-EKS-Cluster-Creation/Install%20CLI#readme)
 * [Create EKS Cluster & Node Groups](https://github.com/shyju102/EKS/blob/main/01-EKS-Cluster-Creation/EKS-Create-Cluster-using-eksctl/README.md)
 * [Delete EKS Cluster & Node Groups](https://github.com/shyju102/EKS/tree/main/01-EKS-Cluster-Creation/Delete-EKSCluster-and-NodeGroups)
 
