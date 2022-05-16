@@ -29,7 +29,7 @@ eksctl get cluster
 ## Step-02: Create & Associate IAM OIDC Provider for our EKS Cluster
 - To enable and use AWS IAM roles for Kubernetes service accounts on our EKS cluster, we must create &  associate OIDC identity provider.
 - To do so using `eksctl` we can use the  below command. 
-- Use latest eksctl version (as on today the latest version is `0.21.0`)
+- Use latest eksctl version (as on today the latest version is `21.5`)
 ```                   
 # Template
 eksctl utils associate-iam-oidc-provider \
@@ -126,6 +126,17 @@ Use putty
 
 ## Step-06: Update Worker Nodes Security Group to allow all traffic
 - We need to allow `All Traffic` on worker node security group
+
+## ## Step-07: Verifying the pod and node status 
+- eksctl get cluster
+- kubectl get node -o wide 
+- kubectl get pod --all-namespaces
+- <img width="347" alt="image" src="https://user-images.githubusercontent.com/62458394/168555881-551be38c-f8d5-4281-895f-23495823fab6.png">
+
+<img width="954" alt="image" src="https://user-images.githubusercontent.com/62458394/168555651-235cd551-1da0-41fe-b6a4-5ce7ebcba361.png">
+<img width="505" alt="image" src="https://user-images.githubusercontent.com/62458394/168555778-339b8903-e853-4653-a067-fe6f3a1d9bed.png">
+
+
 
 ## Additional References
 - https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html
