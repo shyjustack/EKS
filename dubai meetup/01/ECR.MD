@@ -30,3 +30,53 @@ Amazon ECR provides the following features:
 4) Pull through cache rules provide a way to cache repositories in remote public registries in your private Amazon ECR registry. Using a pull through cache rule, Amazon ECR will periodically reach out to the remote registry to ensure the cached image in your Amazon ECR private registry is up to date. For more information, see Using pull through cache rules.
 
 
+# Install  the AWS CLI
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+
+# Step 02 
+create a docker image or pull the image from docker hub 
+```
+FROM ubuntu:latest
+RUN apt update
+RUN apt install -y nginx
+ADD index.html /usr/share/nginx/html/index.html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+### or
+
+```
+docker pull httpd 
+```
+
+# connect to AWS Server 
+
+```
+aws ecr describe-repositories
+
+aws ecr create-repository --repository-name muthu4all-cli --image-scanning-configuration scanOnPush=true --region us-west-2
+
+docker image ls
+
+docker tag php-app 244916762913.dkr.ecr.us-west-2.amazonaws.com/muthu4all-cli
+
+docker push 244916762913.dkr.ecr.us-west-2.amazonaws.com/muthu4all-cli
+
+docker image ls
+
+aws ecr describe-images --repository-name muthu4all-cli
+
+aws ecr list-images --repository-name muthu4all-cli
+
+
+aws ecr start-image-scan --repository-name helloworld --image-id imageTag=1.0 --region us-west-2
+
+aws ecr describe-image-scan-findings --repository-name helloworld --image-id imageTag=1.0 --region us-west-2
+
+
+```
+
