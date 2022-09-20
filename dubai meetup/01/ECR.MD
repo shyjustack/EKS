@@ -80,6 +80,8 @@ aws ecr start-image-scan --repository-name helloworld --image-id imageTag=1.0 --
 
 aws ecr describe-image-scan-findings --repository-name helloworld --image-id imageTag=1.0 --region us-west-2
 
+aws ecr delete-repository --repository-name shyju-cli --force
+
 
 ```
 
