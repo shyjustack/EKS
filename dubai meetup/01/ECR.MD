@@ -10,10 +10,10 @@ An Amazon ECR private registry is provided to each AWS account; you can create o
 Your client must authenticate to Amazon ECR registries as an AWS user before it can push and pull images. For more information, see Private registry authentication.
 
 ### Repository
-An Amazon ECR repository contains your Docker images, Open Container Initiative (OCI) images, and OCI compatible artifacts. For more information, see Amazon ECR private repositories.
+An Amazon ECR repository contains your Docker images, Open Container Initiative (OCI) images, and OCI compatible artifacts. 
 
 ### Repository policy
-You can control access to your repositories and the images within them with repository policies. For more information, see Private repository policies.
+You can control access to your repositories and the images within them with repository policies. 
 
 ### Image
 You can push and pull container images to your repositories. You can use these images locally on your development system, or you can use them in Amazon ECS task definitions and Amazon EKS pod specifications. For more information, see Using Amazon ECR images with Amazon ECS and Using Amazon ECR Images with Amazon EKS
