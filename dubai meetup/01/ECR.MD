@@ -54,6 +54,9 @@ docker pull httpd
 ```
 
 # connect to AWS Server 
+```
+aws configure
+```
 
 ```
 aws ecr describe-repositories
